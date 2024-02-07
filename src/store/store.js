@@ -1,0 +1,36 @@
+import { create } from "zustand";
+
+const usePayStore = create((set) => ({
+  isPaying: false,
+  setPaying: (value) => set({ isPaying: value }),
+  highlightedSection: "left",
+  setHighlightedSection: (value) => set({ highlightedSection: value }),
+  isCryptoWindow: false,
+  setCryptoWindow: (value) => set({ isCryptoWindow: value }),
+  isTrnsxnSuccess: false,
+  setIsTrnsxnSuccess: (value) => set({ isTrnsxnSuccess: value }),
+  isTrnsxnError: false,
+  setIsTrnsxnError: (value) => set({ isTrnsxnError: value }),
+  selectedButton: null,
+  setSelectedButton: (value) => set({ selectedButton: value }),
+  qrData: "",
+  setQRData: (value) => set({ qrdata: value }),
+  QAddData: "",
+  setQAddData: (value) => set({ QAddData: value }),
+  transactionId: null,
+  SetTransactionId: (value) => set({ transactionId: value }),
+  balance: 7358.5,
+  setBalance: (value) => set({ balance: value }),
+  isAuth: false,
+  setIsAuth: (value) => set({ isAuth: value }),
+  userData: null,
+  setUserData: (value) => set({ userData: value }),
+  userAddress: "",
+  setUserAddress: (value) => set({ userAddress: value }),
+  storedUserData: null,
+  setStoredUserData: (value) => set({ storedUserData: value }),
+  isLoggedout: true,
+  setIsLoggedout: (value) => set({ isLoggedout: value }),
+}));
+
+export default usePayStore;

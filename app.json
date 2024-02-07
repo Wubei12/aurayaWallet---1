@@ -1,0 +1,11 @@
+{
+  "name": "aurayaWallet",
+  "displayName": "aurayaWallet",
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "97b609cd-f79d-4be4-9d03-4b9d7378c5ce"
+      }
+    }
+  }
+}
